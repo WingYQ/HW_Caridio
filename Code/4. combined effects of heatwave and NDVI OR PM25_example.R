@@ -29,8 +29,8 @@
 #   - categorical heatwave and ndvi/pm2.5:
 #     hwe_exp_2d90, hwe_exp_2d95, hwe_exp_3d90, hwe_exp_3d95
 #     hwd_exp_2d90, hwd_exp_2d95, hwd_exp_3d90, hwd_exp_3d95
-#     ndvi2
-#     pm25_2
+#     ndvi2 （0: >= median NDVI; 1: <median NDVI ）
+#     pm25_2 (1: < median PM2.5; 1: >= median PM2.5 ）
 #
 #   - combination of heatwave and ndvi/pm2.5: 
 #     ndvi_HWE_gr2d90, ndvi_HWE_gr2d95, ndvi_HWE_gr3d90, ndvi_HWE_gr3d95,
@@ -297,3 +297,4 @@ for (j in 1:length(listn)){
   df_result_all<-rbind(df_result_all, df_result_expo)
   
 }
+
